@@ -17,6 +17,7 @@ const Home = () => {
         </div>
         <div className="md-col-span xl:col-span-2">
           <TradingViewWidget
+            title="Stock Heatmap"
             scriptUrl={`${scriptUrl}stock-heatmap.js`}
             config={MARKET_OVERVIEW_WIDGET_CONFIG}
             height={600}
@@ -34,7 +35,6 @@ const Home = () => {
         </div>
         <div className="h-full md-col-span xl:col-span-2">
           <TradingViewWidget
-            title="Stock Heatmap"
             scriptUrl={`${scriptUrl}market-quotes.js`}
             config={MARKET_DATA_WIDGET_CONFIG}
             height={600}
